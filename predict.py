@@ -36,5 +36,5 @@ x_predict = pd.read_csv('normalized_test.csv', header=None)
 
 prediction = float(model.predict(x_predict)[0][0]) * 100
 
-print("Szansa na dostanie kredytu: ", str(prediction)[:5], "%")
-print("Credit Rating: 1") if prediction > 80 else print("Credit Rating: 0")
+print("Chance for getting credit: ", str(prediction)[:5], "%")
+print("Credit Rating: 1") if prediction > 90 else print("Credit Rating: 0")
